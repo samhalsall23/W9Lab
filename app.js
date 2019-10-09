@@ -53,7 +53,6 @@ app.post('/delmovfromact/:actid/:movid', actors.deleteMovFromActor);
 app.post('/delactfrommov/:actid/:movid', movies.deleteActFromMovie);
 
 // Q5 Add an existing actor to the list of actors in a movie
-// WEEK 9 TASK 4
 app.post('/movies/:movid/actor', movies.addActor);
 
 // Q6 Retrieve (GET) all the movies produced between year1 and year2, where year1>year2.

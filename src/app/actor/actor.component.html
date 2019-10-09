@@ -31,6 +31,9 @@
       <li class="nav-item" style="padding-left:0.2in">
         <a class="btn btn-primary" (click)="changeSection(9)">List Movies</a>
       </li>
+      <li class="nav-item" style="padding-left:0.2in">
+        <a class="btn btn-primary" (click)="changeSection(10)">Extra Task</a>
+      </li>
     </ul>
   </nav>
 <!-- First section: Display all in a tble -->
@@ -167,4 +170,12 @@
         <td>{{item.year}}</td>
       </tr>
     </table>
+  </div>
+
+  <!-- EXTRA TASK: Tenth section: Number of actors & movies -->
+  <div class="section" *ngIf="section==10">
+    
+    <h1>No of Actors {{getNoMovies()}}</h1> <br>
+    <h1>No of Movies {{getNoActors()}}</h1>
+
   </div>

@@ -42,9 +42,7 @@ export class DatabaseService {
     return this.http.delete(url, httpOptions);
   }
   addActor(data) {
-    console.log(data.name);
-
+    // console.log(data.name);
     return this.http.post('/movies/' + data.title, data, httpOptions)
-    
   }
 }

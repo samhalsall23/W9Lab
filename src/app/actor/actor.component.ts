@@ -12,6 +12,7 @@ export class ActorComponent implements OnInit {
   bYear: number = 0;
   actorId: string = "";
 
+
   //movie
   moviesDB: any[] = [];
   title: string = "";
@@ -19,6 +20,7 @@ export class ActorComponent implements OnInit {
   movieId: string = "";
 
   aYear: number = 0;
+
 
 
   constructor(private dbService: DatabaseService) {}
@@ -93,6 +95,16 @@ export class ActorComponent implements OnInit {
       this.onGetActors();
       this.onGetMovies();
     });
+  }
+
+  // EXTRA TASK
+  getNoMovies():number{
+    let number = this.moviesDB.length;
+    return number;
+  }
+  getNoActors():number{
+    let number = this.actorsDB.length;
+    return number;
   }
 
  
